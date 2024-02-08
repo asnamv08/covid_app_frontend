@@ -8,7 +8,7 @@ class PatientApiservice{
       String name,String address,String phone,String symptom,String status,
       ) async{
     var client=http.Client();
-    var apiurl=Uri.parse("http://localhost:3001/api/patient/patient_entry");
+    var apiurl=Uri.parse("http://192.168.251.163:3001/api/patient/patient_entry");
     var response=await client.post(apiurl,
         headers: <String,String>{
           "Content-Type":"application/json; charset=UTF-8"
